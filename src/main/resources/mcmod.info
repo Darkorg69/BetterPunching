@@ -1,0 +1,16 @@
+[
+{
+  "modid": "betterpunching",
+  "name": "Better Punching",
+  "description": "Simple mod making punching in Minecraft much more realistic",
+  "version": "1.0.0",
+  "mcversion": "1.12.2",
+  "url": "None",
+  "updateUrl": "None",
+  "authorList": ["Darkorg"],
+  "credits": "Darkorg, the Forge and FML guys, for making this mod possible",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
