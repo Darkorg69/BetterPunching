@@ -1,4 +1,4 @@
-# BetterPunching 1.0.0 - alpha
+# BetterPunching 1.0.0 - alpha (For Minecraft 1.12.2)
 Add realism to punching and breaking blocks.
 
 -Wood can only be harvested with an axe, punching it will result in pain.
