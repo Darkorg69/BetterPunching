@@ -36,3 +36,8 @@ None tested for now...
 None tested for now...
 
 
+###CREDITS: People which helped me with ideas,works,code and anything in general, that deserve to take credit no matter how big or small their help was.
+@Insane96
+
+
+
