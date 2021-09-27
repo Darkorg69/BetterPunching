@@ -33,7 +33,7 @@ Any incompatibilities/compatibilities shall be reported in the git issues!
  *None tested for now...*
 ### Incompatible mods: (I will only update the list for the latest supported minecraft version 1.16.5)
 Incompatible with any mod that reworks breaking mechanics, loading two mods which alter the same mechanic
-will result in unexpected behaviour.
+will result in unexpected behaviour or probably crash!
 - List for 1.16.5:
 * No Tree Punching by AlcatrazEscapee
 * Natural Progression by oitsjustjose
