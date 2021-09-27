@@ -1,0 +1,28 @@
+modLoader="javafml" #mandatory
+loaderVersion="[36,)" #mandatory
+license="GNU Lesser General Public License v3.0"
+issueTrackerURL="https://github.com/Darkorg69/BetterPunching/issues" #optional
+
+[[mods]] #mandatory
+modId="betterpunching" #mandatory
+version="1.0.0" #mandatory
+displayName="BetterPunching" #mandatory
+#updateJSONURL="https://github.com/Darkorg69" #optional
+displayURL="https://github.com/Darkorg69/BetterPunching" #optional
+logoFile="betterpunching.png" #optional
+credits="The Forge Team for making this mod possible." #optional
+authors="Darkorg" #optional
+description='''A minecraft mod making punching much more realistic.'''
+
+[[dependencies.betterpunching]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[36,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.betterpunching]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
