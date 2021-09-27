@@ -16,7 +16,7 @@ as punching and breaking blocks is one of the main things all players do from th
 Yes, there are! But not a single one of them features what my mod features, and all of them are full of many other features,
 like blocks, items, tools, mechanics etc... This mod simply adds a single simple realistic game mechanic.
 
-##Important
+## Important
 **Installing this mod into vannilla minecraft, without other companion mods, might result in inability of getting wood.**
 **You can get wood if you get an axe or enough wood to craft an axe from the bonus chest at world spawn!**
 
