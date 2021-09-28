@@ -39,9 +39,7 @@ public class WrongTool {
             }
             event.setNewSpeed(Float.MAX_VALUE);
         }
-
         if(ToolCheck.isInvalidTool(state,stack) && !HarvestCheck.canHarvest(state,player,world,pos)) {
-
             //Exceptions
             if(block instanceof SnowBlock || block instanceof WebBlock) {return;}
 

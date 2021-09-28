@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/Darkorg69/BetterPunching/issues" #optional
 
 [[mods]] #mandatory
 modId="betterpunching" #mandatory
-version="1.0.0" #mandatory
+version="1.0.1" #mandatory
 displayName="BetterPunching" #mandatory
 #updateJSONURL="https://github.com/Darkorg69" #optional
 displayURL="https://github.com/Darkorg69/BetterPunching" #optional
