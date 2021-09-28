@@ -1,7 +1,7 @@
 # BetterPunching (latest-release-1.16.5)
 A minecraft mod, making punching and breaking blocks much more realistic!
 
-**Features**
+## Features
 * You can no longer punch wood at the start of the game, you need to first get an axe.
 * Glass of any kind now breaks instantly.
 * Breaking glass with hands will result in pain.
