@@ -1,4 +1,4 @@
-package darkorg.betterpunching.util;
+package darkorg.betterpunching.utils;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.item.ItemStack;
