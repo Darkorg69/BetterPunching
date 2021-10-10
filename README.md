@@ -32,18 +32,15 @@ Mod is lightweight as possible without any bloat.
 * **If "x" registers their blocks with proper blockTags and harvestToolTypes yes it "should" be 100% compatible**
 * **If "x" registers their tools with proper blockHarvestType, yes it "should" be 100% compatible**
 
-## Compatible mods: (Tested on 1.16.5)
-* Dynamic Trees
-* Probably a lot more, I will be slowly adding to the list as I test out new mods.
-
 ## Features to be implemented soon:
 * Add missing flint tools - shovel, sword, hoe.
 * Adding a config to the mod to be more modular.
 * Adding a configurable feature to remove wooden and stone tools, to add more realism to the mod.
 
-### Compatible mods: (I will only update the list for the latest supported minecraft version 1.16.5)
-- List for 1.16.5:
- *None tested for now...*
+## Compatible mods: (Tested on 1.16.5)
+* Dynamic Trees
+* Probably a lot more, I will be slowly adding to the list as I test out new mods.
+
 ### Incompatible mods: (I will only update the list for the latest supported minecraft version 1.16.5)
 Incompatible with any mod that reworks breaking mechanics, loading two mods which alter the same mechanic
 will result in unexpected behaviour or probably crash!
