@@ -17,14 +17,14 @@ Yes, there are! But not a single one of them features what my mod features, and 
 I have made the mod so it is as lightweight as possible without any bloat, also trying to be compatible with any modpack.
 
 ## Important
-**Use JEI to see all recipes**  
-**Refer to the wiki if you don't know how to use the mod**  
+**Use JEI to see all recipes!**  
+**Refer to the wiki if you don't know how to use the mod!**  
 **If you happen to see a bug, please report it, into mod's github repository.**  
 **If you have a bright suggestion, please suggest it, into mod's github repository.**
 
 ## Is "x" mod compatible?
-**If "x" registers their tools with proper blockHarvestType, yes it "should" be 100% compatible**  
-**If "x" registers their blocks with proper blockTags and harvestToolTypes yes it "should" be 100% compatible**
+**If "x" registers their tools with proper blockHarvestType, yes it "should" be 100% compatible.**  
+**If "x" registers their blocks with proper blockTags and harvestToolTypes yes it "should" be 100% compatible.**
 
 ## Features to be implemented soon:
 * Adding a configuration to the mod.
