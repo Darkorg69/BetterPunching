@@ -41,7 +41,7 @@ Mod is lightweight as possible without any bloat.
 * Dynamic Trees
 * Probably a lot more, I will be slowly adding to the list as I test out new mods.
 
-### Incompatible mods: (I will only update the list for the latest supported minecraft version 1.16.5)
+## Incompatible mods: (I will only update the list for the latest supported minecraft version 1.16.5)
 Incompatible with any mod that reworks breaking mechanics, loading two mods which alter the same mechanic
 will result in unexpected behaviour or probably crash!
 - List for 1.16.5:
