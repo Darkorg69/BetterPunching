@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "betterpunching:sharp_flint"
+        }
+    },
+    "result": {
+        "item": "betterpunching:flint_hoe_head",
+        "count": 1
+    }
+}

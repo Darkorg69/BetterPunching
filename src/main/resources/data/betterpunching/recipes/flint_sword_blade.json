@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " #",
+        "# "
+    ],
+    "key": {
+        "#": {
+            "item": "betterpunching:sharp_flint"
+        }
+    },
+    "result": {
+        "item": "betterpunching:flint_sword_blade",
+        "count": 1
+    }
+}

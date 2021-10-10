@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B",
+        "/ "
+    ],
+    "key": {
+        "#": {
+            "item": "betterpunching:flint_axe_head"
+        },
+        "B": {
+            "item": "betterpunching:rope_binding"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "betterpunching:flint_axe",
+        "count": 1
+    }
+}
