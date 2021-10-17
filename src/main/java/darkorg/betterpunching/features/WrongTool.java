@@ -1,7 +1,8 @@
 package darkorg.betterpunching.features;
 
-import darkorg.betterpunching.utils.HarvestCheck;
-import darkorg.betterpunching.utils.ToolCheck;
+import darkorg.betterpunching.setup.Config;
+import darkorg.betterpunching.util.HarvestCheck;
+import darkorg.betterpunching.util.ToolCheck;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -13,6 +14,7 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class WrongTool {
+
     @SubscribeEvent
     public void breakSpeed(PlayerEvent.BreakSpeed event) {
 
@@ -25,7 +27,10 @@ public class WrongTool {
 
         DamageSource invalidpunching = new DamageSource("invalidpunching");
 
+        if(!Config.wrongToolEnabled.get()) {return;}
+
         if(block.getSpeedFactor() == 0.0F) {return;}
+
 
         if(ToolCheck.isInvalidTool(state,stack) && !HarvestCheck.canHarvest(state,player,world,pos)) {
 
@@ -41,7 +46,7 @@ public class WrongTool {
             {return;}
 
             if(stack.isEmpty()) {
-                player.hurt(invalidpunching, 4.0F);
+                player.hurt(invalidpunching, Config.wrongToolDamage.get().floatValue());
             }
             event.setNewSpeed(-1.0F);
         }

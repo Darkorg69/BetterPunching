@@ -1,4 +1,4 @@
-package darkorg.betterpunching.client.tabs;
+package darkorg.betterpunching.tab;
 
 import darkorg.betterpunching.tools.ModTools;
 import net.minecraft.item.ItemGroup;

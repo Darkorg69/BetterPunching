@@ -1,8 +1,8 @@
 package darkorg.betterpunching.tools;
 
 import darkorg.betterpunching.BetterPunching;
-import darkorg.betterpunching.items.tiers.ModItemTier;
-import darkorg.betterpunching.client.tabs.ModTab;
+import darkorg.betterpunching.items.tier.ModItemTier;
+import darkorg.betterpunching.tab.ModTab;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

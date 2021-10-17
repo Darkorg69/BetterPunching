@@ -1,9 +1,10 @@
 package darkorg.betterpunching;
 
-import darkorg.betterpunching.features.*;
-import darkorg.betterpunching.items.ModItems;
-import darkorg.betterpunching.tools.ModTools;
+import darkorg.betterpunching.setup.Config;
+import darkorg.betterpunching.setup.Events;
+import darkorg.betterpunching.setup.Registry;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -19,23 +20,16 @@ public class BetterPunching {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public BetterPunching() {
+        Registry.init();
+        Config.init();
+        Events.init();
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        bus.addListener(this::setup);
+        bus.addListener(this::doClientStuff);
+
         MinecraftForge.EVENT_BUS.register(this);
-
-        //Registry Handler
-        ModItems.init();
-        ModTools.init();
-
-        //Event handler
-        MinecraftForge.EVENT_BUS.register(new PunchingGlass());
-        MinecraftForge.EVENT_BUS.register(new PunchingWood());
-        MinecraftForge.EVENT_BUS.register(new SharpFlint());
-        MinecraftForge.EVENT_BUS.register(new StickFromLeaves());
-        MinecraftForge.EVENT_BUS.register(new WrongTool());
     }
     private void setup(final FMLCommonSetupEvent event) {}
-
     private void doClientStuff(final FMLClientSetupEvent event) {}
 }

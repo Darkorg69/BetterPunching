@@ -1,6 +1,6 @@
-package darkorg.betterpunching.items.bases;
+package darkorg.betterpunching.items.base;
 
-import darkorg.betterpunching.client.tabs.ModTab;
+import darkorg.betterpunching.tab.ModTab;
 import net.minecraft.item.Item;
 
 public class ItemBase extends Item {

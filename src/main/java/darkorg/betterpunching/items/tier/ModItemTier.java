@@ -1,4 +1,4 @@
-package darkorg.betterpunching.items.tiers;
+package darkorg.betterpunching.items.tier;
 
 import darkorg.betterpunching.items.ModItems;
 import net.minecraft.item.IItemTier;

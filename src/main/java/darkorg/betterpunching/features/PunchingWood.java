@@ -1,6 +1,7 @@
 package darkorg.betterpunching.features;
 
-import darkorg.betterpunching.utils.ToolCheck;
+import darkorg.betterpunching.setup.Config;
+import darkorg.betterpunching.util.ToolCheck;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -20,13 +21,15 @@ public class PunchingWood {
 
         DamageSource punchingwood = new DamageSource("punchingwood");
 
+        if(!Config.punchingWoodEnabled.get()) {return;}
+
         if ((state.is(BlockTags.LOGS)) ||
             (state.is(BlockTags.PLANKS)) ||
             (state.is(BlockTags.WOODEN_SLABS)) ||
             (state.is(BlockTags.WOODEN_STAIRS))) {
             if (ToolCheck.isInvalidTool(state, stack)) {
                 if (stack.isEmpty()) {
-                    player.hurt(punchingwood, 2.0F);
+                    player.hurt(punchingwood, Config.punchingWoodDamage.get().floatValue());
                 }
                 event.setNewSpeed(0.0F);
             }

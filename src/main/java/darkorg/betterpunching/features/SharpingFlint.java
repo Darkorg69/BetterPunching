@@ -1,5 +1,6 @@
 package darkorg.betterpunching.features;
 
+import darkorg.betterpunching.setup.Config;
 import darkorg.betterpunching.items.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
@@ -14,9 +15,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import java.util.Random;
 
-public class SharpFlint {
+public class SharpingFlint {
 
-    float successChance = 0.25F;
     private static final Random RANDOM = new Random();
 
     @SubscribeEvent
@@ -28,8 +28,10 @@ public class SharpFlint {
         BlockPos pos = event.getPos();
         BlockState state = world.getBlockState(pos);
 
+        if(!Config.sharpingFlintEnabled.get()) {return;}
+
         if (stack.getItem() == Items.FLINT && state.getMaterial() == Material.STONE) {
-            if (RANDOM.nextFloat() <= successChance) {
+            if (RANDOM.nextFloat() <= Config.sharpingFlintChance.get().floatValue()) {
                 player.inventory.add(new ItemStack(ModItems.SHARP_FLINT.get()));
             }
             stack.shrink(1);

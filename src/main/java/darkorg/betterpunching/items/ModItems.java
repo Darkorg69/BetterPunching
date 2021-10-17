@@ -1,7 +1,7 @@
 package darkorg.betterpunching.items;
 
 import darkorg.betterpunching.BetterPunching;
-import darkorg.betterpunching.items.bases.ItemBase;
+import darkorg.betterpunching.items.base.ItemBase;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
