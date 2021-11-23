@@ -5,8 +5,9 @@ A mod, overhauling punching and breaking mechanics in a popular block game!
 * If you (open-hand) punch a block, you can't harvest, you will hurt yourself.
 * Trying to break a block with wrong tool will result in never ending breaking.
 * You can no longer punch wood at the start of the game, you need to first get an axe.
-* Glass of any kind now breaks instantly and you will start bleeding if you break it with hands.
-* If you (open-hand) punch cactus, without sneaking first, you are going to get a splinter effect.
+* Glass of any kind now breaks instantly and you will start ***bleeding*** if you break it with hands.
+* If you (open-hand) punch cactus, without sneaking first, you are going to get a ***splinter*** effect.
+* New global hardness feature, now every block takes 2.0x times longer to break. *Configurable!*
 
 ## Why this mod?
 I really like playing realism based modpacks, so I decided to make the game more believeble, as punching  
@@ -18,9 +19,10 @@ So I made this mod so it is as lightweight as possible, whilst trying to be comp
 
 ## Important
 **Every feature is 100% configurable in the config file**  
-**Refer to the wiki if you don't know how to use the mod!**  
+**Refer to the wiki if you don't know what the mod does!**  
+**Mod configuration file is located in saves/world/server_config!**  
 **If you happen to see a bug, please report it, into mod's github repository.**  
-**If you have a bright suggestion, please suggest it, into mod's github repository.**
+**If you have a bright suggestion, please suggest it, into mod's github repository.**  
 
 ## Is "x" mod compatible?
 **If "x" registers their tools with proper blockHarvestType, yes it "should" be 100% compatible.**  
