@@ -5,14 +5,14 @@ issueTrackerURL="https://github.com/Darkorg69/BetterPunching/issues" #optional
 
 [[mods]] #mandatory
 modId="betterpunching" #mandatory
-version="1.16.5-1.3.0" #mandatory
+version="1.16.5-1.6.0" #mandatory
 displayName="Better Punching" #mandatory
 #updateJSONURL="https://github.com/Darkorg69" #optional
 displayURL="https://github.com/Darkorg69/BetterPunching" #optional
 logoFile="betterpunching.png" #optional
-credits="Darkorg and the Forge Team for making this mod possible." #optional
+credits="Java and the Forge team for making this mod possible." #optional
 authors="Darkorg" #optional
-description='''A minecraft mod, making punching and breaking blocks much more realistic!'''
+description='''A mod, overhauling punching and breaking mechanics in a popular block game!''' #mandatory
 
 [[dependencies.betterpunching]] #optional
     modId="forge" #mandatory
@@ -20,6 +20,7 @@ description='''A minecraft mod, making punching and breaking blocks much more re
     versionRange="[36,)" #mandatory
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.betterpunching]]
     modId="minecraft"
     mandatory=true

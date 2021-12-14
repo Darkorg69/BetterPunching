@@ -1,19 +1,13 @@
 {
-  "itemGroup.betterpunchingTab": "Better Punching",
-  "item.betterpunching.rope": "Rope",
-  "item.betterpunching.rope_binding": "Rope Binding",
-  "item.betterpunching.sharp_flint": "Sharp Flint",
-  "item.betterpunching.flint_sword": "Flint Sword",
-  "item.betterpunching.flint_pickaxe": "Flint Pickaxe",
-  "item.betterpunching.flint_shovel": "Flint Shovel",
-  "item.betterpunching.flint_axe": "Flint Axe",
-  "item.betterpunching.flint_hoe": "Flint Hoe",
-  "item.betterpunching.flint_sword_blade": "Flint Sword Blade",
-  "item.betterpunching.flint_pickaxe_head": "Flint Pickaxe Head",
-  "item.betterpunching.flint_shovel_head": "Flint Shovel Head",
-  "item.betterpunching.flint_axe_head": "Flint Axe Head",
-  "item.betterpunching.flint_hoe_head": "Flint Hoe Head",
-  "death.attack.cutbyglass" : "%1$s died from accidental glass punching.",
-  "death.attack.punchingwood" : "%1$s punched wood with his fists to death.",
-  "death.attack.invalidpunching" : "%1$s punched blocks with his first to death."
+  "itemGroup.better_punching": "Better Punching",
+
+  "item.betterpunching.bone_hatchet": "Bone Hatchet",
+  "item.betterpunching.flint_hatchet": "Flint Hatchet",
+
+  "effect.betterpunching.bleeding": "Bleeding",
+  "effect.betterpunching.splinter": "Splinter",
+
+  "death.attack.bleeding" : "%1$s bled to death.",
+  "death.attack.splinter" : "%1$s died from a splinter in his hand.",
+  "death.attack.invalidpunching" : "%1$s punched a block too hard."
 }

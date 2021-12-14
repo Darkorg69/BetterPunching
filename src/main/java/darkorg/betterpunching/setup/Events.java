@@ -5,12 +5,10 @@ import net.minecraftforge.common.MinecraftForge;
 
 public class Events {
     public static void init() {
-        MinecraftForge.EVENT_BUS.register(new DisableStoneTools());
-        MinecraftForge.EVENT_BUS.register(new DisableWoodTools());
-        MinecraftForge.EVENT_BUS.register(new EasySticks());
+        MinecraftForge.EVENT_BUS.register(new DisableTools());
+        MinecraftForge.EVENT_BUS.register(new PunchingCactus());
         MinecraftForge.EVENT_BUS.register(new PunchingGlass());
         MinecraftForge.EVENT_BUS.register(new PunchingWood());
-        MinecraftForge.EVENT_BUS.register(new SharpingFlint());
         MinecraftForge.EVENT_BUS.register(new WrongTool());
     }
 }
