@@ -2,12 +2,15 @@
 A mod, overhauling punching and breaking mechanics in a popular block game!
 
 ## Features
-* If you (open-hand) punch a block, you can't harvest, you will hurt yourself.
-* Trying to break a block with wrong tool will result in never ending breaking.
-* You can no longer punch wood at the start of the game, you need to first get an axe.
+* Most blocks now require you to use their proper tool in order to break them.
+* You can no longer punch wood at the start of the game, you need to first get an axe.  
 * Glass of any kind now breaks instantly and you will start ***bleeding*** if you break it with hands.
 * If you (open-hand) punch cactus, without sneaking first, you are going to get a ***splinter*** effect.
-* New global hardness feature, now every block takes 2.0x times longer to break. *Configurable!*
+* If you (open-hand) punch a block, you can't harvest, you will hurt yourself and gain Mining Fatigue and Weakness debuffs.
+
+## Items
+* This mod only adds 2 new items which are the **Bone and Flint Hatchets**
+* The hatchets are basically smaller axes, which have half of normal axe stats.
 
 ## Why this mod?
 I really like playing realism based modpacks, so I decided to make the game more believeble, as punching  
