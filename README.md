@@ -34,7 +34,7 @@ I made this mod so it is as lightweight as possible, whilst trying to be compati
 * If you have a bright suggestion, please suggest it, into mod's github repository.
 
 ## Is "x" mod compatible?
-**Every mod out there should be compatible, if you happen to encounter a bug, please report it.
+**Every mod out there should be compatible, if you happen to encounter a bug, please report it.**
 
 ## Features to be implemented soon:
 * Add logic for more blocks?
