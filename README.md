@@ -47,16 +47,6 @@ I made this mod so it is as lightweight as possible, whilst trying to be compati
 ## Known bugs: 
 **None**
 
-# Check out my other mods:
-[![](https://media.forgecdn.net/avatars/thumbnails/458/483/64/64/637732767151478182.png "")](https://www.curseforge.com/minecraft/mc-mods/better-materials "")
-  **Better Materials**  
-[![](https://media.forgecdn.net/avatars/thumbnails/467/962/64/64/637750691137510712.png "")](https://www.curseforge.com/minecraft/mc-mods/global-block-hardness "")
-  **Global Block Hardness**  
-[![](https://media.forgecdn.net/avatars/thumbnails/467/964/64/64/637750697637241250.png "")](https://www.curseforge.com/minecraft/mc-mods/betterdurability "")
-  **Better Durability**  
-[![](https://media.forgecdn.net/avatars/thumbnails/458/722/64/64/637733419965921053.png "")](https://www.curseforge.com/minecraft/mc-mods/serene-seasons-pams-harvest-craft-2-compat "")
- **Serene Seasons - Pam's Harvest Craft 2 Compat**  
-
 ## Credits
 (People which helped me with ideas, works, code and anything in general, that deserve to take credit no matter how big or small their help was!)  
 https://github.com/Insane96
