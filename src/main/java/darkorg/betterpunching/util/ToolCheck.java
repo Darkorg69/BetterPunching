@@ -1,20 +1,12 @@
 package darkorg.betterpunching.util;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.state.BlockState;
 
+@SuppressWarnings("BooleanMethodIsAlwaysInverted")
 public class ToolCheck {
-    public static boolean isInvalidTool(BlockState state, ItemStack stack) {
-        ToolType blockHarvestTool = state.getBlock().getHarvestTool(state);
-        if (blockHarvestTool != null) {
-            for (ToolType toolType : stack.getItem().getToolTypes(stack)) {
-                if (blockHarvestTool.equals(toolType)) {
-                    return false;
-                }
-            }
-        }
-        return true;
+    public static boolean isCorrectToolForDrops(ItemStack stack, BlockState state) {
+        return stack.getItem().isCorrectToolForDrops(stack, state);
     }
 }
 

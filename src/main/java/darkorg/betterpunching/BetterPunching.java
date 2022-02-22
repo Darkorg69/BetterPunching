@@ -20,10 +20,8 @@ public class BetterPunching {
         Registry.init(bus);
         Config.init();
         Events.init();
-
         bus.addListener(this::setup);
         bus.addListener(this::doClientStuff);
-
         MinecraftForge.EVENT_BUS.register(this);
     }
     private void setup(final FMLCommonSetupEvent event) {}

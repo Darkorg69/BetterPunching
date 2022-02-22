@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "betterpunching:items/bone_hatchet"
+    "layer0": "betterpunching:items/flint_dagger"
   }
 }

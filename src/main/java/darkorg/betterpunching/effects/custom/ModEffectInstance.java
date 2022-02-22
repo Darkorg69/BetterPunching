@@ -1,17 +1,18 @@
 package darkorg.betterpunching.effects.custom;
 
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.potion.Effect;
-import net.minecraft.potion.EffectInstance;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.LivingEntity;
+import org.jetbrains.annotations.NotNull;
 
-@SuppressWarnings("all")
-public class ModEffectInstance extends EffectInstance {
+@SuppressWarnings("UnusedReturnValue")
+public class ModEffectInstance extends MobEffectInstance {
 
-    private final Effect potion;
+    private final MobEffect potion;
     private int duration;
     private int amplifier;
 
-    public ModEffectInstance(Effect potionIn, int durationIn, int amplifierIn) {
+    public ModEffectInstance(MobEffect potionIn, int durationIn, int amplifierIn) {
         super(potionIn, durationIn, amplifierIn);
         this.potion = potionIn;
         this.duration = durationIn;
@@ -19,26 +20,21 @@ public class ModEffectInstance extends EffectInstance {
     }
 
     @Override
-    public boolean tick(LivingEntity entityIn, Runnable runnable) {
+    public boolean tick(@NotNull LivingEntity entityIn, @NotNull Runnable runnable) {
         if (this.duration > 0) {
-            if (this.potion.isReady(duration, amplifier)) {
-                this.performEffect(entityIn);
+            if (this.potion.isDurationEffectTick(duration, amplifier)) {
+            this.applyEffect(entityIn);
             }
         }
         this.deincrementDuration();
         return this.duration > 0;
     }
-
     @Override
-    public void performEffect(LivingEntity entityIn) {
-        if (this.duration > 0) {
-            this.potion.performEffect(entityIn, amplifier);
-        }
+    public void applyEffect(@NotNull LivingEntity entityIn) {
+        if (this.duration > 0) {this.potion.applyEffectTick(entityIn, amplifier);}
     }
 
-    private int deincrementDuration() {
-        return --this.duration;
-    }
+    private int deincrementDuration() {return --this.duration;}
 }
 
 

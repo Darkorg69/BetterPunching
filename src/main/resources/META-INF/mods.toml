@@ -1,29 +1,28 @@
 modLoader="javafml" #mandatory
-loaderVersion="[36,)" #mandatory
-license="GNU Lesser General Public License v3.0"
-issueTrackerURL="https://github.com/Darkorg69/BetterPunching/issues" #optional
+loaderVersion="[39,)" #mandatory
+license="GNU LGPLv3"
+#issueTrackerURL="" #optional
 
 [[mods]] #mandatory
 modId="betterpunching" #mandatory
-version="1.16.5-1.6.0" #mandatory
+version="1.2.0-1.18.1" #mandatory
 displayName="Better Punching" #mandatory
-#updateJSONURL="https://github.com/Darkorg69" #optional
-displayURL="https://github.com/Darkorg69/BetterPunching" #optional
+#updateJSONURL="" #optional
+#displayURL="" #optional
 logoFile="betterpunching.png" #optional
-credits="Java and the Forge team for making this mod possible." #optional
+credits="Thanks for this mod goes to Java and the Forge team." #optional
 authors="Darkorg" #optional
-description='''A mod, overhauling punching and breaking mechanics in a popular block game!''' #mandatory
+description='''A mod, overhauling punching and breaking mechanics in a popular block game!'''
 
 [[dependencies.betterpunching]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[36,)" #mandatory
+    versionRange="[39,)" #mandatory
     ordering="NONE"
     side="BOTH"
-
 [[dependencies.betterpunching]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5]"
+    versionRange="[1.18.1,1.19)"
     ordering="NONE"
     side="BOTH"
