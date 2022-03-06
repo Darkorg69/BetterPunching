@@ -54,7 +54,7 @@ I also made this mod so it is as lightweight as possible, whilst trying to be co
 * Add logic for more blocks?
 
 ## Known bugs: 
-[Mod issues.](https://github.com/Darkorg69/BetterPunching/issues)
+[Link to Github](https://github.com/Darkorg69/BetterPunching/issues)
 
 ## Credits
 (People which helped me with ideas, works, code and anything in general, that deserve to take credit no matter how big or small their help was!)  
