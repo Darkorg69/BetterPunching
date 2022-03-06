@@ -1,6 +1,7 @@
 package darkorg.betterpunching.effects.custom;
 
 import darkorg.betterpunching.effects.ModEffects;
+import darkorg.betterpunching.setup.Config;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -8,19 +9,27 @@ import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.NotNull;
 
 public class ModEffect extends MobEffect {
-
-    public ModEffect(MobEffectCategory typeIn, int liquidColorIn) {super(typeIn, liquidColorIn);}
-
-    @Override
-    public boolean isDurationEffectTick(int duration, int amplifier) {return duration > 0;}
+    public ModEffect(MobEffectCategory typeIn, int liquidColorIn) {
+        super(typeIn, liquidColorIn);
+    }
 
     @Override
-    public void applyEffectTick(@NotNull LivingEntity entity, int amplifier) {
-        if (this == ModEffects.BLEEDING.get()) {
-            entity.hurt(new DamageSource("bleeding"), 0.25F*(amplifier+1));
-        }
+    public void applyEffectTick(@NotNull LivingEntity livingEntity, int amplifier) {
         if (this == ModEffects.SPLINTER.get()) {
-            entity.hurt(new DamageSource ("splinter"), 0.05F*(amplifier+1));
+            DamageSource splinter = new DamageSource("splinter");
+            if (Config.splinterEffectBypassArmor.get()) {
+                livingEntity.hurt(splinter.bypassArmor(), (Config.splinterDamagePerSecond.get().floatValue() / 2) * (amplifier + 1));
+            } else {
+                livingEntity.hurt(splinter, (Config.splinterDamagePerSecond.get().floatValue() / 2) * (amplifier + 1));
+            }
+        }
+        if (this == ModEffects.BLEEDING.get()) {
+            DamageSource bleeding = new DamageSource("bleeding");
+            if (Config.bleedingEffectBypassArmor.get()) {
+                livingEntity.hurt(bleeding.bypassArmor(), (Config.bleedingDamagePerSecond.get().floatValue() / 2) * (amplifier + 1));
+            } else {
+                livingEntity.hurt(bleeding, (Config.bleedingDamagePerSecond.get().floatValue() / 2) * (amplifier + 1));
+            }
         }
     }
 }

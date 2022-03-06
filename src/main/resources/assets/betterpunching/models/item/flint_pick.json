@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "betterpunching:items/flint_pick"
+    "layer0": "betterpunching:item/flint_pick"
   }
 }

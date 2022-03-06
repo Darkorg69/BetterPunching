@@ -5,36 +5,34 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.NotNull;
 
-@SuppressWarnings("UnusedReturnValue")
 public class ModEffectInstance extends MobEffectInstance {
 
-    private final MobEffect potion;
+    private final MobEffect effect;
     private int duration;
-    private int amplifier;
+    private final int amplifier;
 
-    public ModEffectInstance(MobEffect potionIn, int durationIn, int amplifierIn) {
-        super(potionIn, durationIn, amplifierIn);
-        this.potion = potionIn;
+    public ModEffectInstance(MobEffect effectIn, int durationIn, int amplifierIn) {
+        super(effectIn, durationIn, amplifierIn);
+        this.effect = effectIn;
         this.duration = durationIn;
         this.amplifier = amplifierIn;
     }
 
     @Override
-    public boolean tick(@NotNull LivingEntity entityIn, @NotNull Runnable runnable) {
+    public boolean tick(@NotNull LivingEntity livingEntity, @NotNull Runnable runnable) {
         if (this.duration > 0) {
-            if (this.potion.isDurationEffectTick(duration, amplifier)) {
-            this.applyEffect(entityIn);
-            }
+            this.applyEffect(livingEntity);
         }
-        this.deincrementDuration();
+        this.tickDownDuration();
         return this.duration > 0;
     }
+
     @Override
-    public void applyEffect(@NotNull LivingEntity entityIn) {
-        if (this.duration > 0) {this.potion.applyEffectTick(entityIn, amplifier);}
+    public void applyEffect(@NotNull LivingEntity livingEntity) {
+        this.effect.applyEffectTick(livingEntity, this.amplifier);
     }
 
-    private int deincrementDuration() {return --this.duration;}
+    private void tickDownDuration() {
+        --this.duration;
+    }
 }
-
-

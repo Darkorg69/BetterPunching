@@ -1,28 +1,30 @@
 modLoader="javafml" #mandatory
-loaderVersion="[39,)" #mandatory
+loaderVersion="[40,)" #mandatory
 license="GNU LGPLv3"
-#issueTrackerURL="" #optional
+issueTrackerURL="https://github.com/Darkorg69/BetterPunching/issues" #optional
 
 [[mods]] #mandatory
 modId="betterpunching" #mandatory
-version="1.2.0-1.18.1" #mandatory
+version="1.0.0-1.18.2" #mandatory
 displayName="Better Punching" #mandatory
 #updateJSONURL="" #optional
-#displayURL="" #optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/betterpunching" #optional
 logoFile="betterpunching.png" #optional
 credits="Thanks for this mod goes to Java and the Forge team." #optional
+# A text field displayed in the mod UI
 authors="Darkorg" #optional
 description='''A mod, overhauling punching and breaking mechanics in a popular block game!'''
 
 [[dependencies.betterpunching]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[39,)" #mandatory
+    versionRange="[40,)" #mandatory
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.betterpunching]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.1,1.19)"
+    versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"
