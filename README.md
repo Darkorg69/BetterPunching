@@ -35,7 +35,7 @@ The **Dagger** is a lightweight weapon. It has 40% decreased *damage*, 50% less 
 
 ## Why this mod?
 I really like playing realism based modpacks, so I decided to make the game more believeble, because  
-punching and breaking blocks is the main thing all players do from the beginning, to the end of the game.
+punching and breaking blocks is the main thing all players do from the beginning, to the end of the game.  
 I also made this mod so it is as lightweight as possible, whilst trying to be compatible with any mod/modpack, similar mods don't achieve this.
 
 ## Important
