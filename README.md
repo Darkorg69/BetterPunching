@@ -4,11 +4,18 @@ A mod, overhauling punching and breaking mechanics in a popular block game!
 # Notice
 **This mod is for *Forge* only.**
 
+# What does this mod do?
+* This mod tries to add basic block bleaking mechanics.
+* This means most blocks now can't be broken without a tool.
+* And if you don't use a tool or even worse, your hands you will get punished.
+* This mod is well suited for modded Hardcore scenarios.
+
 ## Mod Features
 * Most blocks will now require you to use their proper tool in order to break them.
 * You can no longer punch wood at the start of the game, you need to first craft a **Flint Hatchet**.
 * Unobtainable **Glass** blocks now shatter instantly when you hit them. It should work with all modded glass too.
 * Punching any block you can't harvest will hurt you and you will gain **Mining Fatigue** and **Weakness** debuffs.
+* If you can't harvest the block (not using it's proper tool, or having a lower harvest level tool), you just won't be able to break the block.
 
 ## Mod Effects
 **Bleeding** effect is given when you punch **glass** bare-handed.  
@@ -34,9 +41,9 @@ Yes, there are! But all of them add too much bloat, and are incompatible with mo
 I made this mod so it is as lightweight as possible, whilst trying to be compatible with any mod/modpack.
 
 ## Important
-* Every feature is 100% configurable in the config file.
+* Every mod feature is 100% configurable in the config file.
 * Mod configuration file is located in ***saves/world/server_config***!
-* If you have a bright suggestion, please suggest it, into mod's github repository.
+* You can copy the config file from your world to the defaultconfig folder in order to keep your settings throughout new worlds.
 
 ## Is "x" mod compatible?
 **Every mod out there should be compatible, if you happen to encounter a bug, please report it.**
