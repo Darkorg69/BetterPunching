@@ -47,7 +47,7 @@ I also made this mod so it is as lightweight as possible, whilst trying to be co
 * Every mod out there ***should*** be compatible!  
 * You should reference any issues found in the mod's Github repository.
 * If you happen to encounter a "bugged" block, it's most probably a fault of the mod that adds the block and I can't fix it.
-* Since update for 1.18.2, there is implemented a anti-bugged blocks check and any "bugged" will just follow plain vanilla logic.  
+* Since update for 1.18.2, there is implemented a anti-bugged blocks check and any "bugged" block will just follow vanilla logic.  
 * Is there any way to exclude blocks from the mod? - No, it's impractical and bloaty, it also kills the hardcore mood this mod provides.
 
 ## Features to be implemented soon:
