@@ -14,8 +14,8 @@ A mod, overhauling punching and breaking mechanics in a popular block game!
 ## Mod features
 * Most blocks now, require you to use their proper harvest tool.
 * It adds basic vanilla friendly primitive tools, made from **Flint**.
-* In order to obtain **Cactus** blocks you need to sneak first, else you will get the ***Splinter*** effect.
 * No more tree punching on day one! Punching **Wood** blocks will give you the ***Splinter*** effect.
+* In order to obtain **Cactus** blocks you need to sneak first, else you will get the ***Splinter*** effect.
 * Every **Glass** block will now break instantly and if broken with hands, you will get the ***Bleeding*** effect.
 
 ## Mod Effects
