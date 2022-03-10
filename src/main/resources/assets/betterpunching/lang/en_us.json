@@ -1,13 +1,15 @@
 {
   "itemGroup.better_punching": "Better Punching",
 
-  "item.betterpunching.bone_hatchet": "Bone Hatchet",
+  "item.betterpunching.flint_dagger": "Flint Dagger",
+  "item.betterpunching.flint_spade": "Flint Spade",
+  "item.betterpunching.flint_pick": "Flint Pick",
   "item.betterpunching.flint_hatchet": "Flint Hatchet",
 
-  "effect.betterpunching.bleeding": "Bleeding",
   "effect.betterpunching.splinter": "Splinter",
+  "effect.betterpunching.bleeding": "Bleeding",
 
-  "death.attack.bleeding" : "%1$s bled to death.",
+  "death.attack.invalidpunching" : "%1$s punched a block too hard.",
   "death.attack.splinter" : "%1$s died from a splinter in his hand.",
-  "death.attack.invalidpunching" : "%1$s punched a block too hard."
+  "death.attack.bleeding" : "%1$s bled to death."
 }

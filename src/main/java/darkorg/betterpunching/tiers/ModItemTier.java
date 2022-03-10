@@ -8,9 +8,7 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
-
-    BONE(0, 59, 2.0F, 0.0F, 15, () -> {return Ingredient.fromItems(Items.BONE);}),
-    FLINT(1, 131, 4.0F, 1.0F, 5, () -> {return Ingredient.fromItems(Items.FLINT);});
+    FLINT(1, 65, 4.0F, 1.0F, 5, () -> Ingredient.fromItems(Items.FLINT));
 
     private final int harvestLevel;
     private final int maxUses;
@@ -29,15 +27,32 @@ public enum ModItemTier implements IItemTier {
     }
 
     @Override
-    public int getMaxUses() {return this.maxUses;}
+    public int getMaxUses() {
+        return this.maxUses;
+    }
+
     @Override
-    public float getEfficiency() {return this.efficiency;}
+    public float getEfficiency() {
+        return this.efficiency;
+    }
+
     @Override
-    public float getAttackDamage() {return this.attackDamage;}
+    public float getAttackDamage() {
+        return this.attackDamage;
+    }
+
     @Override
-    public int getHarvestLevel() {return this.harvestLevel;}
+    public int getHarvestLevel() {
+        return this.harvestLevel;
+    }
+
     @Override
-    public int getEnchantability() {return this.enchantability;}
+    public int getEnchantability() {
+        return this.enchantability;
+    }
+
     @Override
-    public Ingredient getRepairMaterial() {return this.repairMaterial.getValue();}
+    public Ingredient getRepairMaterial() {
+        return this.repairMaterial.getValue();
+    }
 }
