@@ -3,8 +3,8 @@ A mod, overhauling punching and breaking mechanics in a popular block game!
 
 # Notice
 * This mod is for ***Forge***!
-* I recommend only playing the 1.18.x version of the mod!
-* Version 1.16.5 is very outdated, but 1.18.x changes will be ported to 1.16.5 soon.
+* Both 1.16.5 and 1.18+ versions are up to date.
+* I highly recommend not playing with the 1.12.2 version, as it is experimental and completely outdated.
 
 # What does this mod do?
 * This mod adds basic block bleaking mechanics.
@@ -45,9 +45,8 @@ I also made this mod so it is as lightweight as possible, whilst trying to be co
 
 ## Is "x" mod compatible?
 * Every mod out there ***should*** be compatible!  
-* You should reference any issues found in the mod's Github repository.
-* If you happen to encounter a "bugged" block, it's most probably a fault of the mod that adds the block and I can't fix it.
-* Since update for 1.18.2, there is implemented a anti-bugged blocks check and any "bugged" block will just follow vanilla logic.  
+* You should reference any issues found in the mod's Github repository.  
+* If you happen to encounter a "bugged" block, it's most probably a fault of the mod that adds the block and I can't fix it.  
 * Is there any way to exclude blocks from the mod? - No, it's impractical and bloaty, it also kills the hardcore mood this mod provides.
 
 ## Features to be implemented soon:
