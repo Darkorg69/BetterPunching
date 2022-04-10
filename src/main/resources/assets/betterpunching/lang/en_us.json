@@ -10,6 +10,6 @@
   "effect.betterpunching.bleeding": "Bleeding",
 
   "death.attack.invalidpunching" : "%1$s punched a block too hard.",
-  "death.attack.splinter" : "%1$s died from a splinter in his hand.",
+  "death.attack.splinter" : "%1$s died from a splinter in their hand.",
   "death.attack.bleeding" : "%1$s bled to death."
 }
